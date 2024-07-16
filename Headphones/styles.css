@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Souce Sans Pro";
+    src: url(./assets/font/SourceSansPro-Black.otf)
+     url(./assets/font/SourceSansPro-Bold.otf)
+     url(./assets/font/SourceSansPro-Light.otf)
+     url(./assets/font/SourceSansPro-ExtraLight.otf)
+     url(./assets/font/SourceSansPro-Semibold.otf)
+     url(./assets/font/SourceSansPro-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+/* --------Header Styles-------- */
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 41px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    /* color: #ffff; */
+}
+
+
+
+/* --------Hero Styles-------- */
+
+/* .hero-wrapper {
+   background: url(./assets/images/headphones_hero_1.jpg);
+} */
+
+.hero-container{
+    max-width: 1000px;
+    margin: 312px auto 115px;
+    text-align: center;
+}
+
+.hero-container h1 {
+    font-size: 32px;
+}
+.hero-container h2 {
+    font-size: 1rem;
+}
+
+.btn {
+    margin: 40px 0 65px;
+    padding: 13px 31px;
+    border: none;
+    border-radius: 22px;
+    background-color: #FF6565;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-container p {
+    line-height: 26px;
+}
+
+
+
+/* --------What we do styles-------- */
+
+.what-we-do-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.what-we-do-container .part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.what-we-do-container .part2 {
+    display: flex;
+    gap: 58px;
+    margin: 90px 117px;
+}
+
+.part2 div h2 {
+    font-size: 18px;
+    margin-bottom: 13px;
+    line-height: 26px;
+}
+
+.part2 div p {
+    font-size: 14px;
+    line-height: 26px;
+}
