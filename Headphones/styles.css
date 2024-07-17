@@ -1,11 +1,6 @@
 @font-face {
     font-family: "Souce Sans Pro";
-    src: url(./assets/font/SourceSansPro-Black.otf)
-     url(./assets/font/SourceSansPro-Bold.otf)
-     url(./assets/font/SourceSansPro-Light.otf)
-     url(./assets/font/SourceSansPro-ExtraLight.otf)
-     url(./assets/font/SourceSansPro-Semibold.otf)
-     url(./assets/font/SourceSansPro-Regular.otf);
+    src: url(./assets/font/SourceSansPro-Black.otf) url(./assets/font/SourceSansPro-Bold.otf) url(./assets/font/SourceSansPro-Light.otf) url(./assets/font/SourceSansPro-ExtraLight.otf) url(./assets/font/SourceSansPro-Semibold.otf) url(./assets/font/SourceSansPro-Regular.otf);
 }
 
 * {
@@ -22,11 +17,10 @@ body {
 header {
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 28px;
+    padding-top: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 header nav ul {
@@ -41,28 +35,32 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     font-size: 12px;
-    /* color: #ffff; */
+    color: #ffff;
 }
-
-
 
 /* --------Hero Styles-------- */
 
-/* .hero-wrapper {
-   background: url(./assets/images/headphones_hero_1.jpg);
-} */
+.hero1-wrapper {
+    background: url(./assets/images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.hero-container{
+.hero-container {
     max-width: 1000px;
-    margin: 312px auto 115px;
+    margin: 312px auto 0;
     text-align: center;
+    padding-bottom: 115px;
 }
 
 .hero-container h1 {
     font-size: 32px;
+    color: #ffff;
 }
+
 .hero-container h2 {
     font-size: 1rem;
+    color: #ffff;
 }
 
 .btn {
@@ -70,7 +68,7 @@ header nav ul li a {
     padding: 13px 31px;
     border: none;
     border-radius: 22px;
-    background-color: #FF6565;
+    background-color: #ff6565;
     color: #ffff;
     text-transform: uppercase;
     font-weight: 700;
@@ -78,15 +76,14 @@ header nav ul li a {
 
 .hero-container p {
     line-height: 26px;
+    color: #ffff;
 }
-
-
 
 /* --------What we do styles-------- */
 
 .what-we-do-container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 110px auto;
     text-align: center;
 }
 
@@ -111,4 +108,136 @@ header nav ul li a {
 .part2 div p {
     font-size: 14px;
     line-height: 26px;
+}
+
+/* --------Our Results-------- */
+.hero2-wrapper {
+    background: url(./assets/images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-results-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+}
+
+.our-1 {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.our-1 h1 {
+    font-size: 2rem;
+    color: #ffff;
+    margin-top: 141px;
+}
+
+.our-1 p {
+    font-size: 1rem;
+    line-height: 26px;
+    color: #ffff;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+    margin-bottom: 79px;
+}
+
+.dots .pentagon {
+    width: 190px;
+    height: 190px;
+}
+
+.dots div div {
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dots div div span {
+    font-size: 46px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.dots div div p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 20px;
+    color: #ffff;
+}
+
+/* --------Contact Us-------- */
+.contact-us-container {
+    max-width: 1000px;
+    width: 335px;
+    margin: 0 auto;
+}
+
+.contact-us-container h3 {
+    font-size: 2rem;
+    margin-bottom: 56px;
+}
+
+form label {
+    font-size: 14px;
+}
+
+form label input,
+textarea {
+    width: 100%;
+    outline: none;
+    border: 0;
+}
+
+.dividor {
+    height: 1px;
+    background-color: #0716298f;
+    margin-bottom: 45px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+/* --------Footer Styles-------- */
+footer {
+    background-color: #071629;
+    color: #ffffff;
+    padding: 90px 200px 125px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-container>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container div div {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 71px;
+    font-size: 12px;
+    color: #ffffff8d;
 }
